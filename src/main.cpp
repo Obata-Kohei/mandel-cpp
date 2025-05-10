@@ -10,17 +10,17 @@ int main() {
     omp_info();
 
     size_t prec = 64;
-    size_t w_px = 64;
+    size_t w_px = 512;
     size_t h_px = w_px;
-    Float re_tar = Float(-1.26222162762384535370226702572022420406);  // -1.26222162762384535370226702572022420406
-    Float im_tar = Float(0.04591700163513884695098681782544085357512);  // 0.04591700163513884695098681782544085357512
+    Float re_tar = Float(-0.5);  // -1.26222162762384535370226702572022420406
+    Float im_tar = Float(0.0);  // 0.04591700163513884695098681782544085357512
     Float w_tar = Float(2.0);
     Float h_tar = w_tar;
     Float w_tar_init = w_tar;
     size_t mcnt_max_init = 300;
     Palette pal = Palette::makeGradationHue(256, 0, 360, 1.0, 0.9);
-    pal.reverse();
-    size_t frames = 200;
+    //pal.reverse();
+    size_t frames = 1;
     Float scale = Float(0.87);
 
     Mandelbrot m;
