@@ -1,0 +1,15 @@
+*.o
+*.class
+*.exe
+*.out
+
+*.log
+
+*.swp
+.DS_Store
+
+obj/
+frames/
+videos/
+
+.vscode/
